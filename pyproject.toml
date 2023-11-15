@@ -1,0 +1,22 @@
+[tool.black]
+line-length = 110
+
+[tool.poetry]
+name = "openai-test"
+version = "0.1.0"
+description = ""
+authors = ["JngMkk"]
+readme = "README.md"
+packages = [{include = "openai_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+openai = "^1.2.4"
+fastapi = "^0.104.1"
+uvicorn = {extras = ["standard"], version = "^0.24.0.post1"}
+websockets = "^12.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
